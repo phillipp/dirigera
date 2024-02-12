@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.summary     = "API client for the IKEA Dirigera hub using a local connection"
   s.authors     = ["Phillipp Röll"]
   s.email       = 'phillipp.roell@trafficplex.de'
-  s.files       = ["lib/dirigera.rb"]
+  s.files       = %w[dirigera.gemspec README.md LICENSE] + `git ls-files | grep -E '^lib'`.split("\n")
   s.homepage    = 'https://rubygems.org/gems/dirigera'
   s.metadata    = { "source_code_uri" => "https://github.com/phillipp/dirigera" }
 
